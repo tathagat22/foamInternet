@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+.transition-bg {
+  transition: background-image 0.5s ease-in-out;
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Custom styles for overview section */
+.overview-box {
+  position: relative;
+  width: 100%;
+}
+
+.home-overview {
+  text-align: center;
+  padding: 2rem;
+}
+
+.button-default {
+  background-color: #001f3f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.button-default:hover {
+  transform: scale(1.05);
+}
+
+.divider-l {
+  height: 1px;
+  background-color: #d1d5db;
+}
+
+/* Brand image styles */
+.brand-img {
+  height: 3rem;
+  width: auto;
+}
+
+.brand-img-s {
+  height: 2.5rem; /* Smaller size for specific brands */
+}
+
+.brand-img-l {
+  height: 3.5rem; /* Larger size for specific brands */
+}
+
+.clear {
+  clear: both;
+}
+
+/* Ensure secondary color matches Comsol's branding */
+.bg-secondary {
+  background-color: #FFC107; /* Amber color from Comsol's palette */
+}
+.solutions-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.solutions-flex a {
+	display: inline-block;
+	width: 47%;
+	transition: 0.4s all;
+}
+.solutions-flex a img {
+	display: block;
+	width: 100%;
+}
